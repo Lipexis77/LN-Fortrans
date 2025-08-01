@@ -9,8 +9,8 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #121212; /* Preto suave */
-            color: #EAEAEA; /* Branco suave */
+            background-color: #f8f9fa; /* Um cinza extremamente claro, quase branco, para dar contraste */
+            color: #212529; /* Preto para o texto principal */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,41 +20,36 @@
         }
 
         .container {
-            background-color: #1E1E1E; /* Cinza bem escuro para o card */
+            background-color: #ffffff; /* O container agora é o branco principal */
             padding: 50px;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-            border-top: 4px solid #990000; /* Borda superior em tom de vinho */
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+            border-top: 5px solid #fd7e14; /* Laranja vibrante na borda superior */
             max-width: 600px;
             width: 90%;
             transition: transform 0.3s ease;
         }
 
         .container:hover {
-            transform: translateY(-5px); /* Efeito de elevação sutil */
-        }
-
-        .logo {
-            width: 80px; /* Ajuste o tamanho do seu logo */
-            margin-bottom: 20px;
+            transform: translateY(-5px);
         }
 
         h1 {
-            color: #FFFFFF;
+            color: #000000; /* Título em preto */
             font-weight: 700;
             font-size: 2.5em;
             margin-bottom: 15px;
         }
 
         p {
-            color: #B0B0B0; /* Cinza claro para o texto de apoio */
+            color: #495057; /* Cinza escuro para o texto de apoio */
             font-size: 1.2em;
             line-height: 1.6;
         }
 
         .download-button {
             display: inline-block;
-            background-color: #990000; /* Cor principal Vinho/Bordô */
+            background-color: #fd7e14; /* Botão Laranja */
             color: white;
             padding: 18px 35px;
             text-decoration: none;
@@ -64,20 +59,20 @@
             margin-top: 30px;
             transition: all 0.3s ease;
             border: none;
-            box-shadow: 0 4px 15px rgba(153, 0, 0, 0.4);
+            box-shadow: 0 4px 15px rgba(253, 126, 20, 0.4);
             cursor: pointer;
         }
 
         .download-button:hover {
-            background-color: #C0392B; /* Vermelho mais claro ao passar o mouse */
+            background-color: #e86100; /* Laranja mais escuro ao passar o mouse */
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+            box-shadow: 0 6px 20px rgba(232, 97, 0, 0.4);
         }
 
         .footer {
             margin-top: 30px;
             font-size: 0.9em;
-            color: #555;
+            color: #adb5bd; /* Cinza bem claro para o rodapé */
         }
     </style>
 </head>
@@ -91,7 +86,7 @@
         </a>
 
         <p class="footer">
-            Desenvolvido por [Felippe Mendez de Andrade]
+            Desenvolvido por [Felippe Andrade / Dev]
         </p>
     </div>
 </body>
