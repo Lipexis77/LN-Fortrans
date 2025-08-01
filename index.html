@@ -3,57 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download - Leitor de Notas Fiscais</title>
+    <title>Download - LN / Fortrans</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212; /* Preto suave */
+            color: #EAEAEA; /* Branco suave */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-        }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 500px;
         }
+
+        .container {
+            background-color: #1E1E1E; /* Cinza bem escuro para o card */
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            border-top: 4px solid #990000; /* Borda superior em tom de vinho */
+            max-width: 600px;
+            width: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px); /* Efeito de elevação sutil */
+        }
+
+        .logo {
+            width: 80px; /* Ajuste o tamanho do seu logo */
+            margin-bottom: 20px;
+        }
+
         h1 {
-            color: #333;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 2.5em;
+            margin-bottom: 15px;
         }
+
         p {
-            color: #666;
-            font-size: 1.1em;
+            color: #B0B0B0; /* Cinza claro para o texto de apoio */
+            font-size: 1.2em;
+            line-height: 1.6;
         }
+
         .download-button {
             display: inline-block;
-            background-color: #ff8c00; /* Laranja Escuro */
+            background-color: #990000; /* Cor principal Vinho/Bordô */
             color: white;
-            padding: 15px 30px;
+            padding: 18px 35px;
             text-decoration: none;
             font-size: 1.2em;
-            font-weight: bold;
+            font-weight: 700;
             border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(153, 0, 0, 0.4);
+            cursor: pointer;
         }
+
         .download-button:hover {
-            background-color: #e67e00; /* Laranja um pouco mais escuro */
+            background-color: #C0392B; /* Vermelho mais claro ao passar o mouse */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Leitor de Notas Fiscais</h1>
-        <p>Clique no botão abaixo para fazer o download da versão mais recente do instalador.</p>
-
+        <p>A ferramenta definitiva para automatizar a extração de dados de suas notas fiscais.</p>
+        
         <a href="Install_LeitorNotas_Fortrans.rar" class="download-button" download>
-            Baixar Instalador (v1.0.0)
+            Baixar Versão 1.0.0
         </a>
+
+        <p class="footer">
+            Desenvolvido por [Felippe Mendez de Andrade]
+        </p>
     </div>
 </body>
 </html>
